@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for the IDE */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'SF Mono', Monaco, 'Inconsolata', 'Roboto Mono', 'Source Code Pro', monospace;
+  background: #0d1117;
+  color: #c9d1d9;
+}
+
+/* Custom scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #484f58 #21262d;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #21262d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #484f58;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6e7681;
+}
+
+/* Monaco editor theme adjustments */
+.monaco-editor {
+  font-family: 'SF Mono', Monaco, 'Inconsolata', 'Roboto Mono', 'Source Code Pro', monospace !important;
+}
+
+/* Custom components */
+.title-bar-drag {
+  -webkit-app-region: drag;
+}
+
+.title-bar-no-drag {
+  -webkit-app-region: no-drag;
+}
+
+/* Split pane adjustments */
+.split-pane {
+  position: relative !important;
+}
+
+.split-pane .Pane {
+  overflow: visible !important;
+}
+
+/* File tree styles */
+.file-tree-item {
+  @apply flex items-center px-2 py-1 hover:bg-gray-700 cursor-pointer text-sm;
+}
+
+.file-tree-item.selected {
+  @apply bg-blue-600;
+}
+
+.file-tree-icon {
+  @apply w-4 h-4 mr-2 flex-shrink-0;
+}
+
+/* Chat interface styles */
+.chat-message {
+  @apply mb-4 p-3 rounded-lg;
+}
+
+.chat-message.user {
+  @apply bg-blue-600 ml-12;
+}
+
+.chat-message.assistant {
+  @apply bg-gray-700 mr-12;
+}
+
+.chat-input {
+  @apply bg-gray-800 border border-gray-600 rounded-lg px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500;
+}
+
+/* Terminal styles */
+.terminal-container {
+  @apply bg-black text-green-400 font-mono text-sm;
+}
+
+/* Status bar styles */
+.status-bar {
+  @apply bg-blue-600 text-white px-4 py-1 text-xs flex items-center justify-between;
+}
+
+/* Loading spinner */
+.spinner {
+  @apply animate-spin rounded-full h-4 w-4 border-b-2 border-white;
+}

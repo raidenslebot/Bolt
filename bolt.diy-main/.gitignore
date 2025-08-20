@@ -1,0 +1,114 @@
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+.vscode/*
+.vscode/launch.json
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+/.history
+/.cache
+/build
+functions/build/
+.env.local
+.env
+.dev.vars
+*.vars
+.wrangler
+_worker.bundle
+
+Modelfile
+modelfiles
+
+# docs ignore
+site
+
+# commit file ignore
+app/commit.json
+changelogUI.md
+docs/instructions/Roadmap.md
+.cursorrules
+*.md
+.qodo
+
+# Large assets and media files (keep directories, exclude heavy files)
+**/*.mov
+**/*.mp4
+**/*.avi
+**/*.mkv
+**/*.webm
+**/*.mp3
+**/*.wav
+**/*.flac
+**/*.ogg
+**/*.m4a
+**/*.aac
+**/*.wma
+**/*.psd
+**/*.ai
+**/*.sketch
+**/*.fig
+**/*.xd
+
+# Large images over certain size (keep small UI assets)
+# Exclude large images but keep icons, logos, and UI elements
+**/*.png
+!**/*icon*.png
+!**/*logo*.png
+!**/*favicon*.png
+!**/*ui*.png
+!**/*button*.png
+**/*.jpg
+!**/*icon*.jpg
+!**/*logo*.jpg
+!**/*ui*.jpg
+!**/*button*.jpg
+**/*.jpeg
+!**/*icon*.jpeg
+!**/*logo*.jpeg
+!**/*ui*.jpeg
+!**/*button*.jpeg
+
+# Archive and backup files
+**/*.zip
+**/*.rar
+**/*.7z
+**/*.tar
+**/*.gz
+**/*.bz2
+**/*.bak
+**/*.backup
+**/*.old
+**/*.orig
+
+# Large database files
+**/*.db
+**/*.sqlite
+**/*.sqlite3
+
+# Temporary files in any directory
+**/temp/
+**/tmp/
+**/*.tmp
+
+# WebContainer specific
+.webcontainer/
+
+# Keep directory structure but exclude heavy content
+# This allows all folders to be tracked while excluding bloat files
